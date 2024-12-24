@@ -1,7 +1,8 @@
 return {
-	"liuchengxu/space-vim-dark",
-	priority = 1000,
-	config = function()
-	    vim.cmd.colorscheme "space-vim-dark"
-	end
+  "eldritch-theme/eldritch.nvim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+        vim.cmd [[colorscheme eldritch]]
+    end
 }
