@@ -1,8 +1,8 @@
 return {
-  "eldritch-theme/eldritch.nvim",
+  "BrunoCiccarino/nekonight",
   lazy = false,
   priority = 1000,
   config = function()
-        vim.cmd [[colorscheme eldritch]]
+        vim.cmd [[colorscheme nekonight]]
     end
 }
