@@ -5,6 +5,7 @@ return {
         require'nvim-treesitter.configs'.setup {
             ensure_installed = {
 		"blade",
+		"twig",
                 "php",
                 "html",
             },
