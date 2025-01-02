@@ -15,6 +15,7 @@ return {
 		    print('LSP attached!')
 	    end
         })
+	require('lspconfig').eslint.setup({})
 	require("lspconfig").tailwindcss.setup({
 	           capabilities = capabilities,
 	           on_attach = function(client, bufnr)
