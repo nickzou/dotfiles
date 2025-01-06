@@ -4,8 +4,9 @@ return {
 		require("mason").setup({
 			ensure_installed = {
 				"lua_ls",
-				"pyright",
-				"tsserver",
+				"ts_ls",
+				"tailwindcss",
+				"intelephense"
 				-- Add all your required LSPs here
 			},
 			automatic_installation = true,
