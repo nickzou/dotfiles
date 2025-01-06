@@ -1,8 +1,8 @@
 return {
-  "BrunoCiccarino/nekonight",
+  "folke/tokyonight.nvim",
   lazy = false,
   priority = 1000,
   config = function()
-        vim.cmd [[colorscheme nekonight]]
+        vim.cmd [[colorscheme tokyonight]]
     end
 }
