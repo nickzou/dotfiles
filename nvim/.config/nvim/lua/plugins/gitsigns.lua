@@ -12,6 +12,7 @@ return {
       linehl = true,
       signcolumn = true,
       show_deleted = true,
+      current_line_blame = true,
     })
   end
 }
