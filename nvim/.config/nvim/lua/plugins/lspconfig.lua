@@ -11,15 +11,9 @@ return {
         require("lspconfig").ts_ls.setup({
             -- optional config here
 	    capabilities = capabilities,
-	    on_attach = function(client, bufnr)
-		    print('LSP attached!')
-	    end
         })
 	require("lspconfig").tailwindcss.setup({
 	           capabilities = capabilities,
-	           on_attach = function(client, bufnr)
-	               print('Tailwind LSP attached!')
-	           end,
 	           settings = {
 	               tailwindCSS = {
 	                   experimental = {
