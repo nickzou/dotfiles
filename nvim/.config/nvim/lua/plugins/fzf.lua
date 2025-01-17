@@ -9,8 +9,8 @@ return {
 	    rg_opts = "--column --line-number --no-heading --color=always --smart-case --hidden --glob '!{node_modules,vendor}/*' --glob '!.git/*'"
 	  },
 	})
-	vim.keymap.set("n", "<space>p", "<cmd>lua require('fzf-lua').files()<CR>", { noremap = true, silent = true }),
-	vim.keymap.set("n", "<space>ff", "<cmd>lua require('fzf-lua').live_grep()<CR>", { noremap = true, silent = true }),
+	vim.keymap.set("n", "<space>p", "<cmd>lua require('fzf-lua').files()<CR>", { noremap = true, silent = true })
+	vim.keymap.set("n", "<space>ff", "<cmd>lua require('fzf-lua').live_grep()<CR>", { noremap = true, silent = true })
 	vim.keymap.set("v", "<space>fg", "<cmd>lua require('fzf-lua').grep_visual()<CR>", { noremap = true, silent = true })
   end
 }
