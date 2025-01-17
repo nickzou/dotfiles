@@ -6,7 +6,16 @@ return {
     -- calling `setup` is optional for customization
     require("fzf-lua").setup({
 	  grep = {
-	    rg_opts = "--column --line-number --no-heading --color=always --smart-case --hidden --glob '!{node_modules,vendor}/*' --glob '!.git/*'"
+                rg_opts = [[
+                    --column
+                    --line-number
+                    --no-heading
+                    --color=always
+                    --smart-case
+                    --hidden
+                    --glob=!{node_modules,vendor,.git,.idea}/*
+                    --glob=!*.{lock,svg,png}
+                ]]
 	  },
 	})
 	vim.keymap.set("n", "<space>p", "<cmd>lua require('fzf-lua').files()<CR>", { noremap = true, silent = true })
