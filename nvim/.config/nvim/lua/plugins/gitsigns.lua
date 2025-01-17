@@ -10,7 +10,6 @@ return {
         changedelete = { text = '~' },
       },
       linehl = true,
-      wordhl = true,
       signcolumn = true,
       show_deleted = true,
       current_line_blame = true,
