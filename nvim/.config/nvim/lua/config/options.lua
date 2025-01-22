@@ -5,5 +5,8 @@ vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter", "CursorHold", "CursorHo
     pattern = "*",
     command = "if mode() != 'c' | checktime | endif"
 })
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
 
-return {} 
+return {}
