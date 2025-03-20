@@ -4,8 +4,8 @@ return {
     config = function()
         require'nvim-treesitter.configs'.setup {
             ensure_installed = {
-		"blade",
-		"twig",
+                "blade",
+                "twig",
                 "php",
                 "html",
             },
