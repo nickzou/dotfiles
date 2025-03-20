@@ -9,6 +9,9 @@ return {
   },
   config = function()
     require("neo-tree").setup({
+        open_on_setup = false,       -- Don't open when Neovim starts
+        open_on_setup_file = false,  -- Don't open when opening a file
+        open_on_tab = false,
         filesystem = {
           filtered_items = {
             hide_dotfiles = false,
