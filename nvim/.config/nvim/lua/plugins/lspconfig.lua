@@ -13,18 +13,18 @@ return {
 	    capabilities = capabilities,
         })
     	require("lspconfig").tailwindcss.setup({
-	           capabilities = capabilities,
-	           settings = {
-	               tailwindCSS = {
-	                   experimental = {
-	                       classRegex = {
-	                           'class="([^"]*)"',
-	                           'className="([^"]*)"',
-	                       }
-	                   }
-	               }
-	           }
-	       })
+           capabilities = capabilities,
+           settings = {
+               tailwindCSS = {
+                   experimental = {
+                       classRegex = {
+                           'class="([^"]*)"',
+                           'className="([^"]*)"',
+                       }
+                   }
+               }
+           }
+	    })
         require('lspconfig').intelephense.setup{
           settings = {
             intelephense = {
