@@ -9,8 +9,8 @@ vim.api.nvim_create_autocmd("ColorScheme", {
   callback = function()
     -- Only customize FlashMatch
     vim.api.nvim_set_hl(0, "FlashLabel", {
-      fg = "#d90707",
-      bg = "#878787",
+      fg = "#7a0707",
+      bg = "#9e9b9b",
       bold = true
     })
   end,
