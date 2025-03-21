@@ -34,24 +34,3 @@ vim.keymap.set('n', '<leader>hP', function()
     vim.cmd('startinsert')
 end, { noremap = true })
 
--- Function to toggle between light and dark mode
-vim.api.nvim_create_user_command('ToggleThemeMode', function()
-  -- Check current mode
-  local current_style = vim.g.cyberdream_config and vim.g.cyberdream_config.style or "dark"
- 
-  -- Toggle to opposite mode
-  local new_style = current_style == "dark" and "light" or "dark"
- 
-  -- Update configuration
-  vim.g.cyberdream_config = vim.g.cyberdream_config or {}
-  vim.g.cyberdream_config.style = new_style
- 
-  -- Apply the theme with new configuration
-  require('cyberdream').setup(vim.g.cyberdream_config)
- 
-  -- Inform user
-  print("Switched to " .. new_style .. " mode")
-end, {})
-
--- Map to a key combination, for example <leader>tm
-vim.api.nvim_set_keymap('n', '<leader>t', ':ToggleThemeMode<CR>', { noremap = true, silent = true })
