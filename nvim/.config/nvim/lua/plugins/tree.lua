@@ -13,7 +13,7 @@ return {
         open_on_setup = false,
         open_on_setup_file = false,
         open_on_tab = false,
-        close_if_last_window = false,
+        close_if_last_window = true,
         filesystem = {
           filtered_items = {
             hide_dotfiles = false,
