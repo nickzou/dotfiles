@@ -16,6 +16,7 @@ return {
                 "html",
                 "typescript",
                 "javascript",
+                "tsx",
             },
             sync_install = false,
             auto_install = true,
