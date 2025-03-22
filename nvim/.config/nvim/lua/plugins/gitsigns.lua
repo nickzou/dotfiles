@@ -9,10 +9,11 @@ return {
         topdelete    = { text = '‾' },
         changedelete = { text = '~' },
       },
-      linehl = false,
+      linehl = true,
       signcolumn = true,
       show_deleted = false,
       current_line_blame = true,
+      word_diff  = true,
     })
   end
 }
