@@ -8,7 +8,7 @@ return {
       "nvim-treesitter/nvim-treesitter-context", -- Show code context
     },
     config = function()
-        require'nvim-treesitter.configs'.setup {
+        require('nvim-treesitter.configs').setup {
             ensure_installed = {
                 "blade",
                 "twig",
@@ -16,8 +16,6 @@ return {
                 "html",
                 "typescript",
                 "javascript",
-                "jsx",
-                "tsx"
             },
             auto_install = true,
             highlight = {
