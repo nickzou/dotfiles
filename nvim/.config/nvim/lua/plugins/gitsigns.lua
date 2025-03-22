@@ -3,12 +3,13 @@ return {
   config = function()
     require('gitsigns').setup({
       signs = {
-        add          = { text = '│' },
+        add          = { text = '││' },
         change       = { text = '│' },
         delete       = { text = '_' },
         topdelete    = { text = '‾' },
         changedelete = { text = '~' },
       },
+      signs_staged_enable = true,
       linehl = true,
       signcolumn = true,
       show_deleted = false,
