@@ -26,6 +26,7 @@ return {
            }
 	    })
         require('lspconfig').intelephense.setup{
+          filetypes = { "php", "blade", "blade.php" },
           settings = {
             intelephense = {
               stubs = { 
@@ -107,6 +108,7 @@ return {
                 "wp-cli",
               },
 	        files = {
+            associations = { "*.php", "*.blade.php", "*.blade" },
 		    maxSize = 5000000;
 	      };
 	    };
