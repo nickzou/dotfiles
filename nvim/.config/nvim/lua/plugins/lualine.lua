@@ -1,6 +1,9 @@
 return {
     'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    dependencies = { 
+        'nvim-tree/nvim-web-devicons',
+        "yavorski/lualine-macro-recording.nvim"
+    },
     config = function()
         require('lualine').setup({
             options = {
@@ -22,7 +25,7 @@ return {
                 }
             },
             sections = {
-                lualine_a = {'mode'},
+                lualine_a = {'mode', 'macro_recording'},
                 lualine_b = {'branch', 'diff', 'diagnostics'},
                 lualine_c = {'filename'},
                 lualine_x = {'encoding', 'fileformat', 'filetype'},
