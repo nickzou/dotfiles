@@ -7,7 +7,7 @@ return {
     require("fzf-lua").setup({
 	  grep = {
             rg_opts = "--column --line-number --no-heading --color=always --smart-case --hidden "..
-              "--color=never --hidden --files -g '!node_modules' -g '!.git' -g '!vendor'"
+              "--color=never --hidden -g '!node_modules' -g '!.git' -g '!vendor'"
 	  },
 	})
 	vim.keymap.set("n", "<space>p", "<cmd>lua require('fzf-lua').files()<CR>", { noremap = true, silent = true })
