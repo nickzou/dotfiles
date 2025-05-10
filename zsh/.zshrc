@@ -12,3 +12,7 @@ export PATH="/Users/nickzou/Library/Application Support/Herd/bin/":$PATH
 
 # ~/.zshrc
 eval "$(starship init zsh)"
+
+
+# Herd injected PHP 8.2 configuration.
+export HERD_PHP_82_INI_SCAN_DIR="/Users/nickzou/Library/Application Support/Herd/config/php/82/"
