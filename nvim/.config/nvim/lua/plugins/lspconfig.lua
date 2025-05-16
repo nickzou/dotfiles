@@ -109,7 +109,7 @@ return {
               },
 	        files = {
             associations = { "*.php", "*.blade.php", "*.blade" },
-		    maxSize = 5000000;
+		    maxSize = 1000000;
 	      };
 	    };
 	  };
