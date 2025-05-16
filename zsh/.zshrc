@@ -16,3 +16,10 @@ eval "$(starship init zsh)"
 
 # Herd injected PHP 8.2 configuration.
 export HERD_PHP_82_INI_SCAN_DIR="/Users/nickzou/Library/Application Support/Herd/config/php/82/"
+
+alias ls='lsd'
+alias ll='lsd -alF'
+alias la='lsd -A'
+alias l='lsd -CF'
+
+alias nick@nas='ssh -i ~/.ssh/id_ed25519.pub nick-zou@10.0.0.106'
