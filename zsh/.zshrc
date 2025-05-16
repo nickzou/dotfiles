@@ -10,6 +10,9 @@ export HERD_PHP_83_INI_SCAN_DIR="/Users/nickzou/Library/Application Support/Herd
 # Herd injected PHP binary.
 export PATH="/Users/nickzou/Library/Application Support/Herd/bin/":$PATH
 
+# Default Programs
+export EDITOR="nvim"
+
 # ~/.zshrc
 eval "$(starship init zsh)"
 
