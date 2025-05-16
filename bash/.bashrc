@@ -78,9 +78,10 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias ls='lsd'
+alias ll='lsd -alF'
+alias la='lsd -A'
+alias l='lsd -CF'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
