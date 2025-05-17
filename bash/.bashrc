@@ -103,3 +103,4 @@ export EDITOR='nvim'
 #fi
 eval "$(starship init bash)"
 
+eval "$(zoxide init --cmd cd bash)"

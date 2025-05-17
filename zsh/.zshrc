@@ -16,6 +16,7 @@ export EDITOR="nvim"
 # ~/.zshrc
 eval "$(starship init zsh)"
 
+eval "$(zoxide init --cmd cd zsh)"
 
 # Herd injected PHP 8.2 configuration.
 export HERD_PHP_82_INI_SCAN_DIR="/Users/nickzou/Library/Application Support/Herd/config/php/82/"
