@@ -6,7 +6,6 @@ return {
       "windwp/nvim-ts-autotag", -- Auto close and rename HTML/JSX tags
       "JoosepAlviste/nvim-ts-context-commentstring", -- Context-aware commenting
       "nvim-treesitter/nvim-treesitter-context", -- Show code context
-      "EmranMR/tree-sitter-blade",
     },
     config = function()
         require'nvim-treesitter.configs'.setup {
