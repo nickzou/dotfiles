@@ -1,3 +1,3 @@
 alias cat='batcat'
 
-alias nv='NVIM_APPNAME=nvim-server nvim' 
+alias nvim='NVIM_APPNAME=nvim-server nvim' 
