@@ -2,7 +2,6 @@ vim.g.mapleader = " "
 vim.keymap.set('n', '-', '<CMD>Oil<CR>',{ desc = 'Open parent directory' })
 vim.keymap.set('n', '<leader>w', ':w<CR>', { desc = 'Save file' })
 vim.keymap.set('n', '<leader>rn', ':set relativenumber!<CR>')
-vim.keymap.set('n', '<leader>t', ':Neotree toggle reveal <CR>')
 vim.keymap.set({'n','v'}, '<Esc><Esc>', ':noh<CR>', { silent = true })
 vim.keymap.set('n', '<leader>gr', ':Gitsigns reset_hunk<CR>')
 vim.keymap.set('n', '<leader>gd', ':Gitsigns toggle_deleted<CR>')
