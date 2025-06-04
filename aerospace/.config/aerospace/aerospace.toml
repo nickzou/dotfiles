@@ -191,9 +191,9 @@ automatically-unhide-macos-hidden-apps = false
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
     alt-shift-semicolon = 'mode service'
 
-    cmd-shift-f = 'fullscreen'
+    alt-cmd-f = 'fullscreen'
 
-    cmd-shift-b = 'balance-sizes'
+    alt-cmd-b = 'balance-sizes'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
