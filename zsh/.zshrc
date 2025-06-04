@@ -31,3 +31,6 @@ alias l='lsd -CF'
 alias cat='bat'
 
 alias nick@nas='ssh -i ~/.ssh/id_ed25519.pub nick-zou@10.0.0.106'
+
+zstyle ':completion:*' menu select
+autoload -U compinit && compinit
