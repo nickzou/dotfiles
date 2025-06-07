@@ -17,6 +17,6 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 })
 
 -- Trigger the highlight immediately upon loading this file
-vim.cmd("colorscheme " .. vim.g.colors_name)
+-- vim.cmd("colorscheme " .. vim.g.colors_name)
 
 return {}
