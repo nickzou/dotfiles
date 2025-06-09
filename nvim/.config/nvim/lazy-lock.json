@@ -10,6 +10,7 @@
   "fzf-lua": { "branch": "main", "commit": "39c55811772d61751d8e5206e8746e0e3ec95f64" },
   "gitsigns.nvim": { "branch": "main", "commit": "d0f90ef51d4be86b824b012ec52ed715b5622e51" },
   "harpoon": { "branch": "harpoon2", "commit": "ed1f853847ffd04b2b61c314865665e1dadf22c7" },
+  "indent-blankline.nvim": { "branch": "master", "commit": "005b56001b2cb30bfa61b7986bc50657816ba4ba" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
   "lazygit.nvim": { "branch": "main", "commit": "b9eae3badab982e71abab96d3ee1d258f0c07961" },
   "lualine-macro-recording.nvim": { "branch": "main", "commit": "e2dcf63ba74e6111b53e1520a4f8a17a3d7427a1" },
