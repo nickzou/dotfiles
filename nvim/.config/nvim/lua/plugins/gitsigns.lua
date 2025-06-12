@@ -12,7 +12,6 @@ return {
       signs_staged_enable = true,
       linehl = true,
       signcolumn = true,
-      show_deleted = false,
       current_line_blame = true,
       word_diff  = true,
     })
