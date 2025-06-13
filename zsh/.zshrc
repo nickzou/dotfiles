@@ -39,6 +39,8 @@ if [[ "$OSTYPE" == "darwin" ]]; then
 fi
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    export NVM_DIR="/home/nick/.config/nvm/"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
     export PATH="/home/nick/.config/herd-lite/bin:$PATH"
     export PHP_INI_SCAN_DIR="/home/nick/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
 fi
