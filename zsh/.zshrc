@@ -34,3 +34,8 @@ alias nick@nas='ssh -i ~/.ssh/id_ed25519.pub nick-zou@10.0.0.106'
 
 zstyle ':completion:*' menu select
 autoload -U compinit && compinit
+
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    export PATH="/home/nick/.config/herd-lite/bin:$PATH"
+    export PHP_INI_SCAN_DIR="/home/nick/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
+fi
