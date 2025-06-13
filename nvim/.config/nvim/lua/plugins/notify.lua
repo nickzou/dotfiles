@@ -4,7 +4,8 @@ return {
     config = function()
         require("notify").setup({
           -- Only changing the position to bottom
-          top_down = false
+          top_down = false,
+          background_colour = "#000000"
         })
         -- Set as default notification function
         vim.notify = require("notify")
