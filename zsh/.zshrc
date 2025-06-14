@@ -43,4 +43,5 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
     export PATH="/home/nick/.config/herd-lite/bin:$PATH"
     export PHP_INI_SCAN_DIR="/home/nick/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
+    alias whatscli=~/WhatsApp/whatscli/whatscli
 fi
