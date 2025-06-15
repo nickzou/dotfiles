@@ -29,5 +29,11 @@
     "poweradapter",
     "break",
     "colors"
-  ]
+  ],
+  "logo": {
+    "color": {
+      "1": "#33ccff",
+      "2": "#00ff99"
+    }
+  }
 }
