@@ -18,6 +18,8 @@ alias l='lsd -CF'
 
 alias cat='bat'
 
+alias tms='tmux new-session -s'
+
 alias nick@nas='ssh -i ~/.ssh/id_ed25519.pub nick-zou@10.0.0.106'
 
 zstyle ':completion:*' menu select
