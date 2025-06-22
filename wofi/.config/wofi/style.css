@@ -1,0 +1,67 @@
+window {
+    margin: 5px;
+    border: 0px solid #444444;
+    background: transparent;
+    /* opacity: 1; */
+    font-family: FontAwesome;
+}
+
+@keyframes erscheinen {
+    from {opacity: 0;}
+      to {opacity: 1;}
+}
+
+#input {
+    margin: 0px 0px 8px;
+    border: 1px solid #b58900;
+    background: #101010;
+    border-radius: 24px;
+    color : #fdf6e3;
+    padding: 8px 16px;
+}
+
+#inner-box {
+    margin: 0px;
+    border: 0px solid #444444;
+    background:transparent;
+}
+
+/* #inner-box flowboxchild:nth-child(even) { */
+/*     background-color: #555555; */
+/* } */
+
+#outer-box {
+    margin: 0px;
+    border: 0px solid rgb(203, 75, 22);
+    background: transparent;
+}
+
+#scroll {
+    margin: 0px;
+    border: 1px solid #586e75;
+    border-radius: 24px;
+    background: #101010;
+    overflow: hidden;
+    /* animation: erscheinen 0.3s linear; */
+}
+
+#text {
+    margin: 1px;
+    border: 0px solid #44AA44;
+    /* background-color: #444444; */
+    color: #FFFFFF;
+}
+#entry {
+    padding: 12px 16px;
+}
+
+#entry:selected {
+    background-color: transparent;
+    color: #b58900;
+}
+
+#img {
+    margin-right: 12px;
+}
+
+
