@@ -46,3 +46,10 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     export PATH="/home/nick/.config/herd-lite/bin:$PATH"
     export PHP_INI_SCAN_DIR="/home/nick/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
 fi
+
+# bun completions
+[ -s "/Users/nickzou/.bun/_bun" ] && source "/Users/nickzou/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
