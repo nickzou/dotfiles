@@ -5,6 +5,7 @@ return {
   config = function()
     -- calling `setup` is optional for customization
     require("fzf-lua").setup({
+      'telescope',
       grep = {
         rg_opts = "--column --line-number --no-heading --color=always --smart-case --hidden -g '!{node_modules,.git,vendor}'"
       },
