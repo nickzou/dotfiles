@@ -1,17 +1,24 @@
 return {
-	"williamboman/mason.nvim",
-	config = function() 
-		require("mason").setup({
+	"mason-org/mason-lspconfig.nvim",
+	dependencies = {
+		"mason-org/mason.nvim",
+		"neovim/nvim-lspconfig",
+	},
+	config = function()
+		require("mason").setup()
+
+		vim.lsp.config("*", {
+			capabilities = require("cmp_nvim_lsp").default_capabilities(),
+		})
+
+		require("mason-lspconfig").setup({
 			ensure_installed = {
 				"lua_ls",
 				"ts_ls",
 				"tailwindcss",
-				"intelephense"
-				-- Add all your required LSPs here
+				"intelephense",
 			},
-			automatic_installation = true,
+			automatic_enable = true,
 		})
-	end
+	end,
 }
-
-
