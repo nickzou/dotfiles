@@ -17,6 +17,7 @@ return {
 				"ts_ls",
 				"tailwindcss",
 				"intelephense",
+                "gopls"
 			},
 			automatic_enable = true,
 		})
