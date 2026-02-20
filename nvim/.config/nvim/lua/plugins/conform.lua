@@ -10,8 +10,13 @@ return {
                 json = { 'prettier' },
                 yaml = { 'prettier' },
                 markdown = { 'prettier' },
-		        blade = { 'prettier' }
-            }
+		        blade = { 'prettier' },
+                go = { 'goimports' },
+            },
+            format_on_save = {
+                timeout_ms = 500,
+                lsp_format = "fallback",
+            },
         })
     end
 }
