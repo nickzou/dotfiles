@@ -15,6 +15,7 @@ alias la='lsd -A'
 alias l='lsd -CF'
 
 alias cat='bat'
+alias vim='nvim'
 
 alias tms='tmux new-session -s'
 
