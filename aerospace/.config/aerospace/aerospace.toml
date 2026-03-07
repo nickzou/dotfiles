@@ -231,8 +231,8 @@ run = 'move-node-to-workspace 8'
 
 [[on-window-detected]]
 if.app-id = 'org.whispersystems.signal-desktop'
-run = 'move-node-to-workspace 8'
+run = 'move-node-to-workspace 9'
 
 [[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
-run = 'move-node-to-workspace 9'
+run = 'move-node-to-workspace 0'
