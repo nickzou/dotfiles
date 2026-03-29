@@ -235,7 +235,7 @@ run = 'move-node-to-workspace 9'
 
 [[on-window-detected]]
 if.app-id = 'com.hicknhacksoftware.MacPass'
-run = 'move-node-to-workspace 8'
+run = 'move-node-to-workspace 7'
 
 [[on-window-detected]]
 if.app-id = 'com.hnc.Discord'

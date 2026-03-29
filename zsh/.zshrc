@@ -1,5 +1,6 @@
 # Default Programs
 export EDITOR="nvim"
+export XDG_CONFIG_HOME="$HOME/.config"
 
 # ~/.zshrc
 eval "$(starship init zsh)"
@@ -19,7 +20,9 @@ alias vim='nvim'
 
 alias tms='tmux new-session -s'
 
-alias nick@nas='ssh -i ~/.ssh/id_ed25519.pub nick-zou@10.0.0.106'
+alias nick@nas='ssh -i ~/.ssh/id_ed25519.pub nick-zou@10.0.0.107'
+
+alias fdp='fd -t f | fzf-tmux -p | xargs nvim'
 
 zstyle ':completion:*' menu select
 autoload -U compinit && compinit

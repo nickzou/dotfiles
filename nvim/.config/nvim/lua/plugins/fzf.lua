@@ -13,6 +13,7 @@ return {
 	vim.keymap.set("n", "<space>p", "<cmd>lua require('fzf-lua').files()<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "<space>f", "<cmd>lua require('fzf-lua').live_grep()<CR>", { noremap = true, silent = true })
 	vim.keymap.set("v", "<space>g", "<cmd>lua require('fzf-lua').grep_visual()<CR>", { noremap = true, silent = true })
+	vim.keymap.set("v", "<space>p", "<cmd>lua require('fzf-lua').files({ query = require('fzf-lua.utils').get_visual_selection() })<CR>", { noremap = true, silent = true })
 	vim.keymap.set("n", "<leader>b", "<cmd>lua require('fzf-lua').buffers()<CR>", { noremap = true, silent = true })
   end
 }
