@@ -22,7 +22,7 @@ alias tms='tmux new-session -s'
 
 alias nick@nas='ssh -i ~/.ssh/id_ed25519.pub nick-zou@10.0.0.107'
 
-alias fdp='fd -t f | fzf-tmux -p | xargs nvim'
+alias fdp='file=$(fd -t f | fzf-tmux -p) && [ -n "$file" ] && nvim "$file"'
 
 zstyle ':completion:*' menu select
 autoload -U compinit && compinit
@@ -55,6 +55,9 @@ fi
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# rust / cargo
+[ -s "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export NVM_DIR="$HOME/.nvm"
