@@ -16,7 +16,7 @@ hl.monitor({ output = "DP-3",  mode = "preferred", position = "auto", scale = "1
 local terminal    = "ghostty"
 local fileManager = "yazi"
 local menu        = "wofi --show drun"
-local browser     = "zen-browser"
+local browser     = "zen-beta"
 
 -------------------
 ---- AUTOSTART ----
