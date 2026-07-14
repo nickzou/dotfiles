@@ -24,6 +24,8 @@ local browser     = "zen-beta"
 -- See https://wiki.hypr.land/Configuring/Basics/Autostart/
 hl.on("hyprland.start", function()
     hl.exec_cmd("waybar & hyprpaper & hyprnotify")
+    -- hyprpaper 0.8.4 (nix) reads hyprpaper.conf but ignores its preload/wallpaper
+    -- directives, so drive the wallpaper over IPC once the daemon's socket is up.
 end)
 
 -------------------------------
@@ -124,8 +126,9 @@ hl.config({
 ----------------
 hl.config({
     misc = {
-        force_default_wallpaper = 0,
+        force_default_wallpaper = false,
         disable_hyprland_logo   = true,
+        disable_splash_rendering = true, 
     },
 })
 
