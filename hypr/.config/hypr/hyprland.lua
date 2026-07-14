@@ -133,6 +133,18 @@ hl.config({
 })
 
 ---------------
+---- BINDS ----
+---------------
+hl.config({
+    binds = {
+        -- With a window fullscreen, movefocus (SUPER + H/J/K/L) cycles to the
+        -- next window and brings it to fullscreen, so you can flip between
+        -- panels without leaving fullscreen. Default is false.
+        movefocus_cycles_fullscreen = true,
+    },
+})
+
+---------------
 ---- INPUT ----
 ---------------
 hl.config({
