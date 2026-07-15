@@ -33,6 +33,9 @@ end)
 -------------------------------
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
+-- Add these lines to fix Electron/Discord pixelation
+hl.env("ELECTRON_ENABLE_WAYLAND", "1")
+hl.env("ELECTRON_OZONE_PLATFORM_HINT", "wayland")
 
 -----------------------
 ---- LOOK AND FEEL ----
