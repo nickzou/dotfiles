@@ -6,7 +6,7 @@
 ---- MONITORS ----
 ------------------
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
-hl.monitor({ output = "eDP-1", mode = "preferred", position = "auto", scale = "1.3333" })
+hl.monitor({ output = "eDP-1", mode = "preferred", position = "auto", scale = "1" })
 hl.monitor({ output = "DP-4",  mode = "preferred", position = "auto", scale = "1" })
 hl.monitor({ output = "DP-3",  mode = "preferred", position = "auto", scale = "1" })
 
