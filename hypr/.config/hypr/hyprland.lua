@@ -197,6 +197,12 @@ hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + K", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + J", hl.dsp.focus({ direction = "down" }))
 
+-- Move the active window within the layout (vim keys)
+hl.bind(mainMod .. " + SHIFT + H", hl.dsp.window.move({ direction = "left"  }))
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.window.move({ direction = "right" }))
+hl.bind(mainMod .. " + SHIFT + K", hl.dsp.window.move({ direction = "up"    }))
+hl.bind(mainMod .. " + SHIFT + J", hl.dsp.window.move({ direction = "down"  }))
+
 -- Switch workspaces (mainMod + [0-9]) / move active window there (mainMod + SHIFT + [0-9])
 for i = 1, 10 do
     local key = i % 10 -- 10 maps to key 0
@@ -269,23 +275,6 @@ hl.window_rule({
     name      = "keepassxc-workspace-3",
     match     = { class = "^(org.keepassxc.KeePassXC)$" },
     workspace = "3",
-})
-
--- Always open chat apps (ZapZap, Discord, Signal) on workspace 10
-hl.window_rule({
-    name      = "zapzap-workspace-10",
-    match     = { class = "^(com.rtosta.zapzap)$" },
-    workspace = "10",
-})
-hl.window_rule({
-    name      = "discord-workspace-10",
-    match     = { class = "^(discord)$" },
-    workspace = "10",
-})
-hl.window_rule({
-    name      = "signal-workspace-10",
-    match     = { class = "^(signal)$" },
-    workspace = "10",
 })
 
 -- Fix some dragging issues with XWayland
