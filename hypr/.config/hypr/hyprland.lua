@@ -23,7 +23,7 @@ local browser     = "zen-beta"
 -------------------
 -- See https://wiki.hypr.land/Configuring/Basics/Autostart/
 hl.on("hyprland.start", function()
-    hl.exec_cmd("waybar & hyprpaper & hyprnotify")
+    hl.exec_cmd("waybar & hyprpaper & hyprnotify --no-sound")
     -- hyprpaper 0.8.4 (nix) reads hyprpaper.conf but ignores its preload/wallpaper
     -- directives, so drive the wallpaper over IPC once the daemon's socket is up.
 end)
@@ -255,6 +255,20 @@ hl.window_rule({
     name  = "suppress-maximize-events",
     match = { class = ".*" },
     suppress_event = "maximize",
+})
+
+-- Always open Zen on workspace 2
+hl.window_rule({
+    name      = "zen-workspace-2",
+    match     = { class = "^(zen-beta)$" },
+    workspace = "2",
+})
+
+-- Always open KeePassXC on workspace 3
+hl.window_rule({
+    name      = "keepassxc-workspace-3",
+    match     = { class = "^(org.keepassxc.KeePassXC)$" },
+    workspace = "3",
 })
 
 -- Fix some dragging issues with XWayland
