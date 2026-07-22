@@ -10,10 +10,17 @@ export HERD_PHP_82_INI_SCAN_DIR="/Users/nickzou/Library/Application Support/Herd
 
 export GREP_OPTIONS='--color=always'
 
-alias ls='lsd'
-alias ll='lsd -alF'
-alias la='lsd -A'
-alias l='lsd -CF'
+if command -v eza &> /dev/null; then
+  alias ls='eza'
+  alias ll='eza -alF'
+  alias la='eza -A'
+  alias l='eza -CF'
+elif command -v lsd &> /dev/null; then
+  alias ls='lsd'
+  alias ll='lsd -alF'
+  alias la='lsd -A'
+  alias l='lsd -CF'
+fi
 
 alias cat='bat'
 alias vim='nvim'
