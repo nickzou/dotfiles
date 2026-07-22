@@ -11,9 +11,9 @@ export HERD_PHP_82_INI_SCAN_DIR="/Users/nickzou/Library/Application Support/Herd
 export GREP_OPTIONS='--color=always'
 
 if command -v eza &> /dev/null; then
-  alias ls='eza'
-  alias ll='eza -alF'
-  alias la='eza -A'
+  alias ls='eza --icons=auto'
+  alias ll='eza --icons=auto -alF'
+  alias la='eza --icons=auto -A'
   alias l='eza -CF'
 elif command -v lsd &> /dev/null; then
   alias ls='lsd'
