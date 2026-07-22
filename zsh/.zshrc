@@ -24,6 +24,8 @@ alias nick@nas='ssh -i ~/.ssh/id_ed25519.pub nick-zou@10.0.0.107'
 
 alias fdp='file=$(fd -t f | fzf-tmux -p) && [ -n "$file" ] && nvim "$file"'
 
+alias synckp='rclone bisync gdrive:notpassword ~/keepass --force'
+
 zstyle ':completion:*' menu select
 autoload -U compinit && compinit
 
