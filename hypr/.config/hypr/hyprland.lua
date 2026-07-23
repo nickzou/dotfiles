@@ -277,6 +277,27 @@ hl.window_rule({
     workspace = "3",
 })
 
+-- Always open Discord on workspace 10
+hl.window_rule({
+    name      = "discord-workspace-10",
+    match     = { class = "^(discord)$" },
+    workspace = "10",
+})
+
+-- Always open Signal on workspace 10
+hl.window_rule({
+    name      = "signal-workspace-10",
+    match     = { class = "^(signal)$" },
+    workspace = "10",
+})
+
+-- Always open ZapZap on workspace 10
+hl.window_rule({
+    name      = "zapzap-workspace-10",
+    match     = { class = "^(com.rtosta.zapzap)$" },
+    workspace = "10",
+})
+
 -- Fix some dragging issues with XWayland
 hl.window_rule({
     name  = "fix-xwayland-drags",
