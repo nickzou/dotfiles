@@ -277,6 +277,13 @@ hl.window_rule({
     workspace = "3",
 })
 
+-- Always open ClickUp on workspace 5
+hl.window_rule({
+    name      = "clickup-workspace-5",
+    match     = { class = "^(ClickUp)$" },
+    workspace = "5",
+})
+
 -- Always open Discord on workspace 10
 hl.window_rule({
     name      = "discord-workspace-10",
