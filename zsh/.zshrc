@@ -14,12 +14,10 @@ if command -v eza &> /dev/null; then
   alias ls='eza --icons=auto'
   alias ll='eza --icons=auto -alF'
   alias la='eza --icons=auto -A'
-  alias l='eza -CF'
 elif command -v lsd &> /dev/null; then
   alias ls='lsd'
   alias ll='lsd -alF'
   alias la='lsd -A'
-  alias l='lsd -CF'
 fi
 
 alias cat='bat'
