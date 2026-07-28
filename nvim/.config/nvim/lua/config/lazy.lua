@@ -32,4 +32,11 @@ require("lazy").setup({
   install = { colorscheme = { "habamax" } },
   -- automatically check for plugin updates
   checker = { enabled = true },
+  performance = {
+    rtp = {
+      -- zip plugin claims *.docx and needs `unzip` (not installed); the pandoc
+      -- docx viewer in config/autocmds.lua handles those files instead.
+      disabled_plugins = { "zip", "zipPlugin" },
+    },
+  },
 })
