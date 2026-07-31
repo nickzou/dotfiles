@@ -4,10 +4,14 @@ return {
   dependencies = { "nvim-tree/nvim-web-devicons" },
   config = function()
     -- calling `setup` is optional for customization
+    -- ripgrep preprocessor that transcodes .docx -> plain text so grep can search
+    -- their contents (--pre-glob limits it to docx; all other files use rg's fast path).
+    local rg_pre = vim.fn.stdpath("config") .. "/scripts/rg-pre.sh"
     require("fzf-lua").setup({
       'telescope',
       grep = {
-        rg_opts = "--column --line-number --no-heading --color=always --smart-case --hidden -g '!{node_modules,.git,vendor}'"
+        rg_opts = "--pre " .. rg_pre .. " --pre-glob '*.docx' "
+          .. "--column --line-number --no-heading --color=always --smart-case --hidden -g '!{node_modules,.git,vendor}'"
       },
     })
 	vim.keymap.set("n", "<space>p", "<cmd>lua require('fzf-lua').files()<CR>", { noremap = true, silent = true })
