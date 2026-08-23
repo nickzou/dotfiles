@@ -13,6 +13,8 @@ return {
                 markdown = { 'prettier' },
 		        blade = { 'prettier' },
                 go = { 'goimports' },
+                terraform = { 'opentofu_fmt' },
+                hcl = { 'opentofu_fmt' },
             },
             format_on_save = {
                 timeout_ms = 500,

@@ -19,6 +19,7 @@ return {
 				"intelephense",
 			"gopls",
 			"jsonls",
+			"terraformls",
 			},
 			automatic_enable = true,
 		})

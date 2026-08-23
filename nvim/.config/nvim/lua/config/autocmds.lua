@@ -3,6 +3,10 @@
 -- collides with the handler below. It's disabled via lazy's disabled_plugins in
 -- config/lazy.lua -- it must be turned off before lazy.setup(), so it can't live here.
 
+-- Terraform template files (templatefile()) have no dedicated parser; treat them
+-- as terraform so interpolations (${...}, %{...}) get highlighted.
+vim.filetype.add({ extension = { tftpl = "terraform" } })
+
 -- Open .docx files as a read-only markdown view (converted via pandoc).
 vim.api.nvim_create_autocmd({ "BufReadCmd" }, {
   pattern = "*.docx",

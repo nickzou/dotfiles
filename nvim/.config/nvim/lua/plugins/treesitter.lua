@@ -21,9 +21,9 @@ return {
         -- (jsonc is covered by `json`; tmux has no official parser) -- listing them
         -- triggers "skipping unsupported language" warnings at startup.
         local ensure = {
-            "bash", "css", "html", "hyprlang", "javascript", "json",
+            "bash", "css", "hcl", "html", "hyprlang", "javascript", "json",
             "lua", "markdown", "markdown_inline", "nix", "php", "rust",
-            "tsx", "twig", "typescript", "vim", "vimdoc",
+            "terraform", "tsx", "twig", "typescript", "vim", "vimdoc",
         }
         pcall(ts.install, ensure)
 
