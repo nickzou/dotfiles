@@ -25,7 +25,7 @@ alias vim='nvim'
 
 alias tms='tmux new-session -s'
 
-alias nick@nas='ssh -i ~/.ssh/id_ed25519.pub nick-zou@10.0.0.106'
+alias nick@nas='ssh -i ~/.ssh/id_ed25519.pub nick-zou@10.0.0.107'
 
 alias fdp='file=$(fd -t f | fzf-tmux -p) && [ -n "$file" ] && nvim "$file"'
 
