@@ -188,6 +188,7 @@ hl.bind(mainMod .. " + M",      hl.dsp.exit())
 hl.bind(mainMod .. " + E",      hl.dsp.exec_cmd(terminal .. " -e " .. fileManager))
 hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd("dolphin"))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("clickup"))
+hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("zennote"))
 hl.bind(mainMod .. " + F",         hl.dsp.window.fullscreen({ mode = "maximized" }))  -- was: fullscreen, 1
 hl.bind(mainMod .. " + ALT + F",   hl.dsp.window.fullscreen({ mode = "fullscreen" })) -- was: fullscreen, 0
 hl.bind(mainMod .. " + V",      hl.dsp.window.float({ action = "toggle" }))
