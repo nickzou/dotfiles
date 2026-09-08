@@ -20,6 +20,7 @@ return {
 			"gopls",
 			"jsonls",
 			"terraformls",
+            "rust_analyzer",
 			},
 			automatic_enable = true,
 		})
