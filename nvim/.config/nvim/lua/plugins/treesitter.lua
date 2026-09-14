@@ -4,7 +4,6 @@ return {
     lazy = false,    -- the main branch does not support lazy-loading
     build = ":TSUpdate",
     dependencies = {
-      "nvim-treesitter/nvim-treesitter-textobjects",
       "windwp/nvim-ts-autotag", -- Auto close and rename HTML/JSX tags
       "JoosepAlviste/nvim-ts-context-commentstring", -- Context-aware commenting
       "nvim-treesitter/nvim-treesitter-context", -- Show code context
