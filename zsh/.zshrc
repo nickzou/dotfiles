@@ -25,7 +25,7 @@ alias vim='nvim'
 
 alias tms='tmux new-session -s'
 
-alias nick@nas='ssh -i ~/.ssh/id_ed25519.pub nick-zou@10.0.0.107'
+alias nick@nas='ssh -i ~/.ssh/id_ed25519.pub nick-zou@10.0.0.106'
 
 alias fdp='file=$(fd -t f | fzf-tmux -p) && [ -n "$file" ] && nvim "$file"'
 
@@ -73,3 +73,12 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(zoxide init --cmd cd zsh)"
 export PATH="$HOME/.local/bin:$PATH"
+
+# Android SDK (installed by Android Studio)
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export ANDROID_SDK_ROOT="$ANDROID_HOME"
+export PATH="$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$ANDROID_HOME/cmdline-tools/latest/bin"
+# JDK 17 (brew openjdk@17) for Gradle. Android Studio's bundled JBR is Java 25,
+# whose JEP 472 rejects the native calls CMake/NDK make during configure. AGP 8.x
+# officially supports JDK 17/21.
+export JAVA_HOME="/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home"
