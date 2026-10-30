@@ -34,6 +34,7 @@ return {
 			"php",
 			"rust",
 			"terraform",
+			"toml",
 			"tsx",
 			"twig",
 			"typescript",
