@@ -82,6 +82,3 @@ export PATH="$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$ANDROID_
 # whose JEP 472 rejects the native calls CMake/NDK make during configure. AGP 8.x
 # officially supports JDK 17/21.
 export JAVA_HOME="/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home"
-
-# A simple prompt
-PROMPT='%F{green}%n%F{yellow}@%F{blue}%m %F{cyan}%~%f$ '
