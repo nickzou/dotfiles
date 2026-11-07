@@ -22,6 +22,7 @@ return {
 		local ensure = {
 			"bash",
 			"css",
+			"dockerfile",
 			"hcl",
 			"html",
 			"hyprlang",
