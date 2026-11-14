@@ -8,6 +8,7 @@ return {
 		"JoosepAlviste/nvim-ts-context-commentstring", -- Context-aware commenting
 		"nvim-treesitter/nvim-treesitter-context", -- Show code context
 		"EmranMR/tree-sitter-blade", -- Blade grammar (best-effort; vim-blade is the fallback)
+		"nickzou/tree-sitter-wp-blocks",
 	},
 	config = function()
 		local ts = require("nvim-treesitter")
@@ -69,6 +70,37 @@ return {
 				local fd = io.open(dir .. "/" .. q .. ".scm", "r")
 				if fd then
 					pcall(vim.treesitter.query.set, "blade", q, fd:read("*a"))
+					fd:close()
+				end
+			end
+		end)
+
+		-- WordPress block markup: third-party grammar, same pattern as blade above.
+		-- src/parser.c is committed upstream so no tree-sitter CLI is needed. Queries
+		-- ship flat in queries/, so register them by hand. Filetype detection lives in
+		-- plugins/tree-sitter-wp-blocks.lua.
+		-- The main branch rebuilds its parser table, so custom parsers must be
+		-- registered from a User TSUpdate autocmd (see its README).
+		vim.api.nvim_create_autocmd("User", {
+			pattern = "TSUpdate",
+			callback = function()
+				require("nvim-treesitter.parsers").wp_blocks = {
+					install_info = {
+						url = "https://github.com/nickzou/tree-sitter-wp-blocks",
+						branch = "main",
+					},
+					tier = 3,
+				}
+			end,
+		})
+		pcall(function()
+			pcall(ts.install, { "wp_blocks" })
+
+			local dir = vim.fn.stdpath("data") .. "/lazy/tree-sitter-wp-blocks/queries"
+			for _, q in ipairs({ "highlights", "injections", "folds", "indents" }) do
+				local fd = io.open(dir .. "/" .. q .. ".scm", "r")
+				if fd then
+					pcall(vim.treesitter.query.set, "wp_blocks", q, fd:read("*a"))
 					fd:close()
 				end
 			end
