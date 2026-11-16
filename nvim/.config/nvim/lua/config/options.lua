@@ -11,6 +11,6 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.g.PHP_outdentphpescape = 0
 
-vim.filetype.add({ extension = { twig = "twig" } })
+vim.filetype.add({ extension = { twig = "twig", j2 = "jinja", jinja = "jinja", jinja2 = "jinja" } })
 
 return {}

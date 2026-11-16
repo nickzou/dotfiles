@@ -28,6 +28,8 @@ return {
 			"html",
 			"hyprlang",
 			"javascript",
+			"jinja",
+			"jinja_inline",
 			"json",
 			"lua",
 			"markdown",
