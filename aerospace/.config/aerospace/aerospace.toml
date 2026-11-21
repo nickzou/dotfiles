@@ -225,6 +225,24 @@ run = 'move-node-to-workspace 1'
 if.app-id = 'app.zen-browser.zen'
 run = 'move-node-to-workspace 2'
 
+# ArtCraft apps (FigCraft, VectorCraft, ...). Bundle ids are ai.storyteller.*, but
+# on-window-detected has no app-id prefix match, so match the "<Name>Craft" app names
+# instead; this also covers apps not installed yet. Requires a prefix so the unrelated
+# Craft docs app isn't caught.
+[[on-window-detected]]
+if.app-name-regex-substring = '[A-Za-z]Craft'
+run = 'move-node-to-workspace 3'
+
+# Affinity apps (Affinity, Designer 2, Photo 2, Publisher 2); bundle ids differ
+# (com.canva.affinity vs com.seriflabs.*), so match on the name.
+[[on-window-detected]]
+if.app-name-regex-substring = 'Affinity'
+run = 'move-node-to-workspace 3'
+
+[[on-window-detected]]
+if.app-id = 'com.anthropic.claudefordesktop'
+run = 'move-node-to-workspace 6'
+
 [[on-window-detected]]
 if.app-id = 'net.whatsapp.WhatsApp'
 run = 'move-node-to-workspace 8'
